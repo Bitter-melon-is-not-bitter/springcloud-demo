@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: cloudservice-config-client #和bootstrap上的spring:cloud:config:name 保持一致

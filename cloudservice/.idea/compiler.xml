@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudservice-api" />
+        <module name="cloudservice-config-3344" />
+        <module name="cloudservice-config-client-3355" />
+        <module name="cloudservice-config-Eureka-client-7001" />
+        <module name="cloudservice-consumer-dept-80" />
+        <module name="cloudservice-consumer-dept-feign" />
+        <module name="cloudservice-consumer-hystrix-dashboard" />
+        <module name="cloudservice-Eureka-7001" />
+        <module name="cloudservice-Eureka-7002" />
+        <module name="cloudservice-Eureka-7003" />
+        <module name="cloudservice-provider-config-dept-8001" />
+        <module name="cloudservice-provider-dept-8001" />
+        <module name="cloudservice-provider-dept-8002" />
+        <module name="cloudservice-provider-dept-8003" />
+        <module name="cloudservice-provider-dept-hystrix-8001" />
+        <module name="cloudservice-zuul-gateway-9527" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

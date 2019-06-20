@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tang.mapper.DeptMapper">
+    <resultMap id="DeptMap" type="com.tang.entities.Dept">
+        <id property="dId" column="d_id" jdbcType="BIGINT"></id>
+        <result property="dName" column="d_name" jdbcType="VARCHAR"></result>
+        <result property="dSource" column="d_source" jdbcType="VARCHAR"></result>
+    </resultMap>
+    <select id="findById" resultType="com.tang.entities.Dept" parameterType="java.lang.Long" resultMap="DeptMap">
+      select d_id,d_name,d_source from dept where d_id=#{dId};
+    </select>
+
+    <select id="findAll" parameterType="com.tang.entities.Dept" resultMap="DeptMap">
+        select d_id,d_name,d_source from dept;
+    </select>
+
+    <insert id="addDept" parameterType="com.tang.entities.Dept">
+        insert into dept(d_name,d_source) values(#{dName,jdbcType=VARCHAR},DATABASE());
+    </insert>
+</mapper>

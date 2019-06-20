@@ -1,0 +1,12 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloudservice-config
+  cloud:
+    config:
+      server:
+        git:
+          skipSslValidation: true
+          uri: https://github.com/Bitter-melon-is-not-bitter/springcloud-config.git #github上的仓库
